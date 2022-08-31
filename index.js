@@ -10,6 +10,9 @@ app.use(cors());
 const comicRoutes = require("./routes/comics");
 app.use(comicRoutes);
 
+const characterRoutes = require("./routes/characters");
+app.use(characterRoutes);
+
 app.get("/", (req, res) => {
   res.json("Welcome on my Marvel API");
 });
